@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+}
+
+.control {
+    font-size: 20px;
+    color: #DAA520;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+input[type=text], input[type=number] {
+    margin: 10px;
+    padding: 35px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#addBookContainer{
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+
+#addBookButton{
+    background-color: #d299c2;
+    background-image: linear-gradient(to top, #DAA520 0%, #aef9d7 100%);
+    padding: 7px;
+    /* width: 50%; */
+    border: 2px solid  rgb(31, 31, 31);
+    border-radius: 5px;
+}
+
+#addBookButton:hover{
+    cursor: pointer;
+}
+
+.booksContainer{
+    width: 50%;
+    margin: auto;
+}
+
+.bookContainer{
+    border: 3px solid #DAA520;
+    padding: 20px;
+    margin: 21px 0;
+    border-radius: 10px;
+    background: rgb(224,224,224);
+    /* background: linear-gradient(180deg, rgba(224,224,224,1) 0%, rgba(241,241,241,1) 60%); */
+}
+
+.header{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+}
+
+.author, .body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pages{
+    text-align: right;
+    font-style: italic;
+}
+
+.status{
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.read, .notRead{
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.read{
+    background-color: #699e3c;
+    border: 2px solid rgb(31, 31, 31);
+    border-radius: 2px;
+}
+
+.notRead{
+    background-color: red;
+    border: 2px solid rgb(31, 31, 31);
+}
+
+.deleteButtonContainer{
+    text-align: right;
+}
+
+.deleteButton{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.close{
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#saveBookButton{
+    background-color: #d299c2;
+    background-image: linear-gradient(to top, #DAA520 0%, #aef9d7 100%);;
+    border: 1px solid black;
+    width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* #addBookButton{
+        width: 100%;
+    }
+    .mainContainer{
+        width: 70%;
+    }
+    .modal-content{
+        width: 80%;
+    } */
+    .booksContainer{
+        width: 100%;
+    }
+}
